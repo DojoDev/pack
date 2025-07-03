@@ -1,6 +1,4 @@
-import React from 'react';
-
-const Gallery = () => {
+export default function Gallery() {
   return (
     <section className="py-12 sm:py-16 md:py-20 px-4 bg-gradient-to-br from-purple-900 via-black to-pink-900 relative overflow-hidden">
       {/* Background Effects */}
@@ -90,7 +88,5 @@ const Gallery = () => {
         </div>
       </div>
     </section>
-  );
-};
-
-export default Gallery;
+  )
+}

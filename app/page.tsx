@@ -1,12 +1,11 @@
-import React from 'react';
-import Header from './components/Header';
-import OfferCards from './components/OfferCards';
-import Testimonials from './components/Testimonials';
-import Gallery from './components/Gallery';
-import FloatingCTA from './components/FloatingCTA';
-import Background from './components/Background';
+import Header from './components/Header'
+import OfferCards from './components/OfferCards'
+import Testimonials from './components/Testimonials'
+import Gallery from './components/Gallery'
+import FloatingCTA from './components/FloatingCTA'
+import Background from './components/Background'
 
-function App() {
+export default function Home() {
   return (
     <div className="relative min-h-screen bg-black overflow-x-hidden">
       <Background />
@@ -49,7 +48,5 @@ function App() {
 
       <FloatingCTA />
     </div>
-  );
+  )
 }
-
-export default App;

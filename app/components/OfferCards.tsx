@@ -1,7 +1,6 @@
-import React from 'react';
-import { MessageCircle, Zap, Crown } from 'lucide-react';
+import { MessageCircle, Zap, Crown } from 'lucide-react'
 
-const OfferCards = () => {
+export default function OfferCards() {
   const features = [
     {
       id: 1,
@@ -27,7 +26,7 @@ const OfferCards = () => {
       gradient: "from-pink-500 to-purple-600",
       emoji: "👑"
     }
-  ];
+  ]
 
   return (
     <section className="py-12 sm:py-16 md:py-20 px-4 bg-black relative overflow-hidden">
@@ -106,7 +105,5 @@ const OfferCards = () => {
         </div>
       </div>
     </section>
-  );
-};
-
-export default OfferCards;
+  )
+}

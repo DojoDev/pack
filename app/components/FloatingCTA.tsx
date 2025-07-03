@@ -1,21 +1,23 @@
-import React, { useState, useEffect } from 'react';
-import { ShoppingCart, Zap } from 'lucide-react';
+'use client'
 
-const FloatingCTA = () => {
-  const [isVisible, setIsVisible] = useState(false);
+import { useState, useEffect } from 'react'
+import { ShoppingCart, Zap } from 'lucide-react'
+
+export default function FloatingCTA() {
+  const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
     const toggleVisibility = () => {
       if (window.pageYOffset > 300) {
-        setIsVisible(true);
+        setIsVisible(true)
       } else {
-        setIsVisible(false);
+        setIsVisible(false)
       }
-    };
+    }
 
-    window.addEventListener('scroll', toggleVisibility);
-    return () => window.removeEventListener('scroll', toggleVisibility);
-  }, []);
+    window.addEventListener('scroll', toggleVisibility)
+    return () => window.removeEventListener('scroll', toggleVisibility)
+  }, [])
 
   return (
     <>
@@ -64,7 +66,5 @@ const FloatingCTA = () => {
         </div>
       </div>
     </>
-  );
-};
-
-export default FloatingCTA;
+  )
+}

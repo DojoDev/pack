@@ -1,7 +1,7 @@
-import React from 'react';
-import { Star, MessageCircle } from 'lucide-react';
+import { Star, MessageCircle } from 'lucide-react'
+import Image from 'next/image'
 
-const Testimonials = () => {
+export default function Testimonials() {
   const testimonials = [
     {
       id: 1,
@@ -43,7 +43,7 @@ const Testimonials = () => {
       avatar: "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop&crop=face",
       rating: 5
     }
-  ];
+  ]
 
   return (
     <section className="py-12 sm:py-16 md:py-20 px-4 bg-gradient-to-br from-purple-900 via-black to-pink-900 relative overflow-hidden">
@@ -77,9 +77,11 @@ const Testimonials = () => {
                     
                     <div className="relative z-10 flex-1 flex flex-col">
                       <div className="flex items-center mb-3 lg:mb-4">
-                        <img
+                        <Image
                           src={testimonial.avatar}
                           alt={testimonial.name}
+                          width={48}
+                          height={48}
                           className="w-10 h-10 lg:w-12 lg:h-12 rounded-full border-2 border-yellow-400 mr-3"
                         />
                         <div className="min-w-0 flex-1">
@@ -120,9 +122,11 @@ const Testimonials = () => {
                     
                     <div className="relative z-10">
                       <div className="flex items-center mb-4">
-                        <img
+                        <Image
                           src={testimonial.avatar}
                           alt={testimonial.name}
+                          width={48}
+                          height={48}
                           className="w-12 h-12 rounded-full border-2 border-yellow-400 mr-3"
                         />
                         <div>
@@ -149,7 +153,5 @@ const Testimonials = () => {
         </div>
       </div>
     </section>
-  );
-};
-
-export default Testimonials;
+  )
+}

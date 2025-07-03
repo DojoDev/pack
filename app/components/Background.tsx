@@ -1,6 +1,4 @@
-import React from 'react';
-
-const Background = () => {
+export default function Background() {
   return (
     <div className="fixed inset-0 z-0 overflow-hidden">
       {/* Animated Gradient Background */}
@@ -26,7 +24,5 @@ const Background = () => {
       <div className="absolute top-0 left-0 w-full h-1/3 bg-gradient-to-b from-purple-600/20 to-transparent"></div>
       <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-pink-600/20 to-transparent"></div>
     </div>
-  );
-};
-
-export default Background;
+  )
+}

@@ -1,7 +1,6 @@
-import React from 'react';
-import { Flame, Zap, Star } from 'lucide-react';
+import { Flame, Zap, Star } from 'lucide-react'
 
-const Header = () => {
+export default function Header() {
   return (
     <header className="relative min-h-screen bg-gradient-to-br from-purple-900 via-pink-800 to-black overflow-hidden">
       {/* Animated Background Elements - Hidden on mobile */}
@@ -58,7 +57,5 @@ const Header = () => {
       {/* Gradient Overlay */}
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black to-transparent"></div>
     </header>
-  );
-};
-
-export default Header;
+  )
+}
